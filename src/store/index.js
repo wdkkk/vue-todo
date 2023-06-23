@@ -61,6 +61,7 @@ export default createStore({
       commit("deleteTask", res.data);
     },
     async editTask({ commit }, data) {
+      console.log(data);
       let headersList = {
         Accept: "*/*",
         "User-Agent": "Thunder Client (https://www.thunderclient.com)",
@@ -73,7 +74,7 @@ export default createStore({
       });
 
       let reqOptions = {
-        url: "https://6492f073428c3d2035d0f1f3.mockapi.io/tasks/1",
+        url: `https://6492f073428c3d2035d0f1f3.mockapi.io/tasks/${data.id}`,
         method: "PUT",
         headers: headersList,
         data: bodyContent,

@@ -17,6 +17,8 @@
 <style lang="sass" scoped>
   .tasks
     padding-top: 50px
+    overflow-y: auto
+    height: 100vh
 
   .tasks-enter-active,
   .tasks-leave-active

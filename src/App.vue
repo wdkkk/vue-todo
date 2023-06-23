@@ -24,6 +24,8 @@
 <style lang="sass">
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap')
 
+  body
+    overflow: hidden
 
   *
     padding: 0
